@@ -1,4 +1,8 @@
 import sqlite3
 
 
-sqlite3.conntec('database.db')
+database_name = 'greeleysmtp.db'
+
+database = sqlite3.connect(database_name)
+
+database.close()
